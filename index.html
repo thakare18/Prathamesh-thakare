@@ -1,15 +1,138 @@
-<!doctype html>
-<html>
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
-  </head>
-  <body>
-    <nav class="bg-blue-300 mx-3 my-3 py-8 space-x-4">
-        <h1 class="text-black font-sans text-sm  ">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus totam eaque corrupti voluptatum natus dicta explicabo dolores quibusdam nostrum ex!</h1>
-        <h1 class="text-black font-serif text-2xl  tracking-wide ">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Ea, possimus?</h1>
-        <h1 class="text-black font-mono text-2xl   ">Lorem ipsum dolor sit amet.</h1> 
-        </nav>  
-  </body>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Sheriyans Coding School</title>
+
+  <!-- Tailwind Play CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-sans overflow-x-hidden">
+  <!-- font-sans: clean default font -->
+  <!-- overflow-x-hidden: removes horizontal scroll -->
+
+  <!-- ================= NAVBAR ================= -->
+  <nav
+    class="absolute top-0 left-0 w-full z-10 flex items-center justify-between px-6 md:px-10 lg:px-16 py-6 bg-transparent">
+    <!-- absolute: navbar floats on top -->
+    <!-- top-0 left-0: position at top -->
+    <!-- w-full: full width -->
+    <!-- z-10: stays above image -->
+    <!-- flex: horizontal layout -->
+    <!-- items-center: vertically center -->
+    <!-- justify-between: space between logo & menu -->
+    <!-- px-6/md:px-10/lg:px-16: responsive padding -->
+    <!-- py-6: vertical padding -->
+    <!-- bg-transparent: transparent background -->
+
+    <h1 class="text-lg md:text-xl font-bold text-black">
+      <!-- text-lg/md:text-xl: responsive text size -->
+      <!-- font-bold: bold text -->
+      <!-- text-black: text color -->
+      Sheriyans Coding School
+    </h1>
+
+    <ul class="flex gap-4 md:gap-6 lg:gap-8 text-gray-800 text-sm">
+      <!-- flex: menu items in row -->
+      <!-- gap-*: space between items -->
+      <!-- text-gray-800: dark gray text -->
+      <!-- text-sm: small text size -->
+
+      <li class="cursor-pointer font-semibold hover:text-black">
+        <!-- cursor-pointer: hand cursor -->
+        <!-- font-semibold: medium bold -->
+        <!-- hover:text-black: hover color -->
+        Home
+      </li>
+
+      <li class="cursor-pointer font-semibold hover:text-black">Courses</li>
+      <li class="cursor-pointer font-semibold hover:text-black">College Ambassador</li>
+      <li class="cursor-pointer font-semibold hover:text-black">Community</li>
+      <li class="cursor-pointer font-semibold hover:text-black">Classroom</li>
+      <li class="cursor-pointer font-semibold hover:text-black">Sign In</li>
+    </ul>
+  </nav>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="flex min-h-screen">
+    <!-- flex: two column layout -->
+    <!-- min-h-screen: full screen height -->
+
+    <!-- ===== LEFT CONTENT ===== -->
+    <div
+      class="w-1/2 px-8 md:px-16 lg:px-24 flex flex-col justify-center gap-6 pt-24">
+      <!-- w-1/2: 50% width -->
+      <!-- px-*: responsive side padding -->
+      <!-- flex-col: vertical layout -->
+      <!-- justify-center: vertical center -->
+      <!-- gap-6: space between elements -->
+      <!-- pt-24: space for navbar -->
+
+      <h1 class="text-4xl lg:text-5xl font-bold leading-snug">
+        <!-- text-4xl/lg:text-5xl: heading size -->
+        <!-- font-bold: bold heading -->
+        <!-- leading-snug: line spacing -->
+
+        Learn from the
+        <span class="text-emerald-500">
+          <!-- text-emerald-500: green text -->
+          coolest
+        </span><br />
+        <span class="text-emerald-500">
+          coding platform
+        </span>
+        in India.
+      </h1>
+
+      <ul class="text-gray-600 space-y-2 text-sm">
+        <!-- text-gray-600: light text -->
+        <!-- space-y-2: vertical spacing -->
+        <!-- text-sm: small text -->
+
+        <li>✔ Top notch projects</li>
+        <li>✔ Support via mentors</li>
+      </ul>
+
+      <button
+        class="w-fit bg-emerald-500 text-white px-6 py-3 rounded-md hover:bg-emerald-600 transition">
+        <!-- w-fit: button width = content -->
+        <!-- bg-emerald-500: green background -->
+        <!-- text-white: white text -->
+        <!-- px-6 py-3: padding -->
+        <!-- rounded-md: rounded corners -->
+        <!-- hover:bg-emerald-600: hover effect -->
+        <!-- transition: smooth hover -->
+
+        Explore our courses
+      </button>
+
+      <p class="text-sm text-gray-500 max-w-md">
+        <!-- text-sm: small text -->
+        <!-- text-gray-500: muted color -->
+        <!-- max-w-md: limit width -->
+
+        we're about coding and designing, it's in our heart & we would love
+        to share all of it with you.
+      </p>
+    </div>
+
+    <!-- ===== RIGHT IMAGE ===== -->
+    <div class="w-1/2 bg-emerald-200 flex items-center justify-center">
+      <!-- w-1/2: 50% width -->
+      <!-- bg-emerald-200: light green background -->
+      <!-- flex + center: center image -->
+
+      <img
+        src="https://ik.imagekit.io/sheryians/photed_MVice1qZE.png"
+        class="h-full w-auto object-cover"
+        alt="student" />
+      <!-- h-full: full height -->
+      <!-- w-auto: auto width -->
+      <!-- object-cover: image fits nicely -->
+    </div>
+
+  </section>
+
+</body>
 </html>
